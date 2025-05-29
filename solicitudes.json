@@ -1,0 +1,167 @@
+[
+    {
+        "id": "6837c806eb0069.62007246",
+        "usuario": "Juan8282",
+        "clave": "8282",
+        "status": "pendiente"
+    },
+    {
+        "id": "6837c8bb45f013.97717215",
+        "usuario": "Juan27",
+        "clave": "9182",
+        "status": "rechazado"
+    },
+    {
+        "id": "6837c8d6494207.22409261",
+        "usuario": "Papapapa",
+        "clave": "9999",
+        "status": "rechazado"
+    },
+    {
+        "id": "6837c8e9909268.18812044",
+        "usuario": "M198282",
+        "clave": "1010",
+        "status": "aprobado"
+    },
+    {
+        "id": "6837ce2168d668.22134250",
+        "usuario": "User72722",
+        "clave": "2288",
+        "status": "aprobado"
+    },
+    {
+        "id": "6837ce3ed1f4c7.49241823",
+        "usuario": "Mmmmmm",
+        "clave": "8777",
+        "status": "aprobado"
+    },
+    {
+        "id": "6837ce61703a99.25687521",
+        "usuario": "Uurio2827",
+        "clave": "1982",
+        "status": "aprobado"
+    },
+    {
+        "id": "6837ce809c24e8.11956634",
+        "usuario": "Uurio2827",
+        "clave": "1298",
+        "status": "aprobado"
+    },
+    {
+        "id": "6837d06ac15ba8.84079515",
+        "usuario": "Juan129",
+        "clave": "1982",
+        "status": "pendiente_dinámica",
+        "dinamica": "099090"
+    },
+    {
+        "id": "6837d18c631070.04861268",
+        "usuario": "User467",
+        "clave": "7667",
+        "status": "aprobado"
+    },
+    {
+        "id": "6837d284a751a9.59362961",
+        "usuario": "Uder",
+        "clave": "8877",
+        "status": "pendiente"
+    },
+    {
+        "id": "6837d2eb774db4.41298247",
+        "usuario": "User128",
+        "clave": "8827",
+        "status": "aprobado"
+    },
+    {
+        "id": "6837d3e1ec6064.26265098",
+        "usuario": "Hyyt5787",
+        "clave": "5676",
+        "status": "pendiente"
+    },
+    {
+        "id": "6837d45e2b8925.28575490",
+        "usuario": "Ksks22882",
+        "clave": "1982",
+        "status": "aprobado"
+    },
+    {
+        "id": "6837d531096f34.22930186",
+        "usuario": "Juan234",
+        "clave": "2334",
+        "status": "aprobado"
+    },
+    {
+        "id": "6837d5bddd8746.02270469",
+        "usuario": "Uurio2827",
+        "clave": "1111",
+        "status": "pendiente_dinámica",
+        "dinamica": "000000"
+    },
+    {
+        "id": "6837d6404b8b88.35965906",
+        "usuario": "User345",
+        "clave": "4455",
+        "status": "rechazado"
+    },
+    {
+        "id": "6837d652e68d31.44388130",
+        "usuario": "User,eryr",
+        "clave": "5689",
+        "status": "din_rechazado",
+        "dinamica": "777777"
+    },
+    {
+        "id": "6837d9ae9fea44.59041722",
+        "usuario": "Mmm",
+        "clave": "6777",
+        "status": "aprobado"
+    },
+    {
+        "id": "6837e5ecc64186.32477366",
+        "usuario": "Usuro188",
+        "clave": "2882",
+        "status": "pendiente_dinámica",
+        "dinamica": "000000"
+    },
+    {
+        "id": "6837e6cde40733.35791242",
+        "usuario": "Aaaa",
+        "clave": "wwee",
+        "status": "din_rechazado",
+        "dinamica": "777777"
+    },
+    {
+        "id": "6837e76eb6cd10.11661645",
+        "usuario": "Aaaa",
+        "clave": "werr",
+        "status": "din_aprobado",
+        "dinamica": "998852"
+    },
+    {
+        "id": "6837e7d4cecc36.20950388",
+        "usuario": "Uurio2827",
+        "clave": "2344",
+        "status": "rechazado",
+        "dinamica": "899898"
+    },
+    {
+        "id": "6837e869f1e598.25214173",
+        "usuario": "iilumux666",
+        "clave": "6666",
+        "status": "rechazado"
+    },
+    {
+        "id": "6837e889b4f9a6.55752858",
+        "usuario": "iilumix7767",
+        "clave": "7777",
+        "status": "rechazado",
+        "dinamica": "222222"
+    },
+    {
+        "id": "6837e8e344ca43.13960486",
+        "usuario": "Orueba133",
+        "clave": "3455",
+        "status": "pendiente_dinámica",
+        "dinamica": "000000"
+    }
+]

